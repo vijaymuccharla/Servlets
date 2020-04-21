@@ -1,0 +1,10 @@
+CREATE TABLE `springcore`.`patientregistration` (
+  `regId` INT NOT NULL AUTO_INCREMENT,
+  `patName` VARCHAR(25) NULL,
+  `patAddress` VARCHAR(25) NULL,
+  `patAge` INT(10) NULL,
+  `gender` VARCHAR(25) NULL,
+  `coronaStage` VARCHAR(25) NULL,
+  PRIMARY KEY (`regId`));
+  
+  
