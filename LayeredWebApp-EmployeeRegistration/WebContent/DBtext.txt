@@ -1,0 +1,9 @@
+CREATE TABLE `springcore`.`employee_registration` (
+  `empid` INT NOT NULL AUTO_INCREMENT,
+  `empname` VARCHAR(45) NULL,
+  `empaddrs` VARCHAR(45) NULL,
+  `baseSal` FLOAT NULL,
+  `grossSal` FLOAT NULL,
+  `empSal` FLOAT NULL,
+  `doj` DATE NULL,
+  PRIMARY KEY (`empid`));

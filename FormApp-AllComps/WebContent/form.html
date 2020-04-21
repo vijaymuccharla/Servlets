@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+table, th, td, tr {
+	/* border:2px solid black */
+	border-collapse: collapse;
+	padding: 10px;
+	background-color: grey;
+}
+</style>
+<title>Form-Application</title>
+</head>
+<body>
+	<form action="formurl" method="post">
+		<div align="center">
+			<table>
+				<tr>
+					<th colspan="2"><h1>Personal Details</h1></th>
+				</tr>
+				<tr>
+					<td>Name :</td>
+					<td><input type:"text" name="tname" value="" /></td>
+				</tr>
+				<tr>
+					<td>Age :</td>
+					<td><input type="text" name="tage" value="" /></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td><input type="radio" name="gender" value="M" />Male <input
+						type="radio" name="gender" value="F" /> Female</td>
+				</tr>
+				<tr>
+					<td>Address :</td>
+					<td><textarea name="taddrs" rows="4" cols="20">Enter Address</textarea></td>
+				</tr>
+				<tr>
+					<td>Marital Status :</td>
+					<td><input type="checkbox" name="ms" value="Married" />Married</td>
+				</tr>
+				<tr>
+					<td>Qulification :</td>
+					<td><select name="qualif">
+							<option value="B.Tech">Engineering</option>
+							<option value="MBBS">Medical</option>
+							<option value="B.A">Arts</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Courses :</td>
+					<td><select name="crs">
+							<option value="Java">Java Pkg</option>
+							<option value="DotNet">DotNet</option>
+							<option value="Testing">Selenium</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Hobbies ::</td>
+					<td><input type="checkbox" name="hb" value="read" checked />Reading
+						<input type="checkbox" name="hb" value="browse" />Bolgging <input
+						type="checkbox" name="hb" value="roaming" />Travelling <input
+						type="checkbox" name="hb" value="TV" />Watching TV <input
+						type="checkbox" name="hb" value="learning" />Exploring</td>
+				</tr>
+				<tr align="center">
+					<td colspan="2"><input type="submit" value="Apply" /> <input
+						type="reset" value="Cancel" /></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+
+</html>
+
+
+
