@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<welcome-file-list>
+		<welcome-file>input.html</welcome-file>
+	</welcome-file-list>
+	
+<!-- 	context-param values configuration    -->
+		<context-param>
+			<param-name>driver</param-name>
+			<param-value>com.mysql.cj.jdbc.Driver</param-value>
+		</context-param>
+
+		<context-param>
+			<param-name>dburl</param-name>
+			<param-value>jdbc:mysql://localhost:3306/hibtest</param-value>
+		</context-param>
+		<context-param>
+			<param-name>dbuser</param-name>
+			<param-value>root1</param-value>
+		</context-param>
+		
+			<!-- 	it takes LAST value if we give same context name/param values-->
+			
+<!-- 
+		<context-param>
+			<param-name>dbuser</param-name>
+			<param-value>raja</param-value>
+		</context-param>
+-->		
+ 
+
+		
+		<context-param>
+			<param-name>dbpwd</param-name>
+			<param-value>root</param-value>
+		</context-param>
+
+
+	<servlet>
+		<servlet-name>emp</servlet-name>
+		<servlet-class>com.vijay.servlet.EmployeeSearchServlet</servlet-class>
+
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>com.mysql.cj.jdbc.Driver</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dburl</param-name>
+			<param-value>jdbc:mysql://localhost:3306/hibtest</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>dbuser</param-name>
+			<param-value>root</param-value>
+		</init-param>
+
+<!-- 
+
+		it takes FIRST value if we keep 
+		same value and name of one Config param name/value
+
+		<init-param>
+			<param-name>dbuser</param-name>
+			<param-value>raja</param-value>
+		</init-param>
+ -->
+		
+		
+
+		<init-param>
+			<param-name>dbpwd</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>emp</servlet-name>
+		<url-pattern>/empurl</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
