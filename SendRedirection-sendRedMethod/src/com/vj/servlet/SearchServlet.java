@@ -36,6 +36,9 @@ public class SearchServlet extends HttpServlet {
 		else if(engine.equalsIgnoreCase("bing")) 
 			resp.sendRedirect("https://www.bing.com/search?q="+query);
 		
+		//rd.forward(req,resp);   -----> will throw ISE cause resp.sendRedirect() will discard the existing response
+		//rd.include(-,-);  -----> Will throw ISE, as Sendredirect already discarded the response
+		
 			//close stream
 		pw.close();
 		
