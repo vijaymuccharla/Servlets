@@ -35,8 +35,10 @@ public class SecondServlet extends HttpServlet {
 
 		pw.println("<h2 style='color:blue;text-align:center'> <a href='form1.jsp'> Home </a></h2>");
 		/*
-				Here form 1 has values that can be accessed only by FirstServlet as request,response objects are different for both servlets
-				But form 2 values will be displayed as SecondServlet request has access to form 2.
+				Here form 1/request1 has values that can be accessed only by FirstServlet as request,response objects are different for Second servlets
+				So form1 values are NULL.
+				
+				But form 2 values will be displayed as SecondServlet request has access to form 2 /resquest2
 
 				To solve this we have Session Tracking/Session Management
 		 */		
